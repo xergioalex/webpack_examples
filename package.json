@@ -1,0 +1,19 @@
+{
+  "name": "webpack_examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  	"test": "echo \"Error: no test specified\" && exit 1",
+  	"build": "webpack index.js --output bundle.js --mode development"
+  },
+  "repository": "git@github.com:xergioalex/webpack_examples.git",
+  "author": "Sergio Alexander <xergioalex@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+  	"webpack"
+  ],
+  "devDependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
