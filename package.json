@@ -11,7 +11,8 @@
     "build:extract:css": "webpack --config ./plugin-extract-text/webpack.config.js",
     "build:multiple:entrypoints": "webpack --config ./multiple-entry-points/webpack.config.js",
     "build:dev:server": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
-    "build:babel": "webpack --config ./babel-loader/webpack.config.js"
+    "build:babel": "webpack --config ./babel-loader/webpack.config.js",
+    "build:images": "webpack --config ./url-loader-images/webpack.config.js"
   },
   "repository": "git@github.com:xergioalex/webpack_examples.git",
   "author": "Sergio Alexander <xergioalex@gmail.com>",
@@ -20,16 +21,17 @@
     "webpack"
   ],
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2016": "^6.24.1",
-    "css-loader": "^1.0.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "mini-css-extract-plugin": "^0.4.1",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.5",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-es2016": "6.24.1",
+    "css-loader": "1.0.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "mini-css-extract-plugin": "0.4.1",
+    "style-loader": "0.21.0",
+    "url-loader": "1.0.1",
+    "webpack": "4.16.3",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.5"
   }
 }
