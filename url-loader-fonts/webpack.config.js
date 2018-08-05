@@ -25,25 +25,27 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.(jpg|png|gif|woff|eot|ttf|svg)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            // name: '[path][name].[ext]?[hash]',
-            name: (file) => {
-              const path = file
-              const pathParts = path.split('/')
-              if (process.env.NODE_ENV !== 'production') {
-                return `${pathParts[pathParts.length - 3]}/${pathParts[pathParts.length - 2]}/[name].[ext]`
-              }
+      // {
+      //   test: /\.(jpg|png|gif|woff|eot|ttf|svg)$/,
+      //   use: {
+      //     loader: 'file-loader',
+      //     options: {
+      //       // name: '[path][name].[ext]?[hash]',
+      //       name: (file) => {
+      //         const path = file
+      //         const pathParts = path.split('/')
+      //         if (process.env.NODE_ENV !== 'production') {
+      //           return `${pathParts[pathParts.length - 3]}/${pathParts[pathParts.length - 2]}/[name].[ext]`
+      //         }
 
-              return `${pathParts[pathParts.length - 3]}/${pathParts[pathParts.length - 2]}/[name].[ext]?[hash]`
-            },
-            outputPath: 'dist/'
-          }
-        }
-      },
+      //         return `${pathParts[pathParts.length - 3]}/${pathParts[pathParts.length - 2]}/[name].[ext]?[hash]`
+      //       },
+      //       outputPath: '',
+      //       context: 'dist/'
+
+      //     }
+      //   }
+      // },
       {
         // test: What type i want to recognize
         // use: What loader will be load
