@@ -22,3 +22,7 @@ body {
   font-size: 40px;
   font-family: 'open_sanslight';
 }
+
+.img-test {
+  background-image: url('../images/xergioalex.jpg');
+}

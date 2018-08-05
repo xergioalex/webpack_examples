@@ -26,6 +26,25 @@ module.exports = {
         }
       },
       {
+        test: /\.(jpg|png|gif|woff|eot|ttf|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            // name: '[path][name].[ext]?[hash]',
+            name: (file) => {
+              const path = file
+              const pathParts = path.split('/')
+              if (process.env.NODE_ENV !== 'production') {
+                return `${pathParts[pathParts.length - 3]}/${pathParts[pathParts.length - 2]}/[name].[ext]`
+              }
+
+              return `${pathParts[pathParts.length - 3]}/${pathParts[pathParts.length - 2]}/[name].[ext]?[hash]`
+            },
+            outputPath: 'dist/'
+          }
+        }
+      },
+      {
         // test: What type i want to recognize
         // use: What loader will be load
         test: /\.(jpg|png|woff|eot|ttf|svg)$/,
@@ -50,7 +69,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/[name].css",
+      filename: "src/css/[name].css",
       chunkFilename: "[id].css"
     })
   ]
