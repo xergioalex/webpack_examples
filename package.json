@@ -16,7 +16,8 @@
     "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
     "build:video": "webpack --config ./file-loader-video/webpack.config.js",
     "build:json": "webpack --config ./json-loader/webpack.config.js",
-    "build:react": "export NODE_ENV=\"development\" && webpack --config ./react/webpack.config.js"
+    "build:react": "export NODE_ENV=\"development\" && webpack --config ./react/webpack.config.js",
+    "build:sass": "export NODE_ENV=\"development\" && webpack --config ./sass-loader/webpack.config.js"
   },
   "repository": "git@github.com:xergioalex/webpack_examples.git",
   "author": "Sergio Alexander <xergioalex@gmail.com>",
@@ -35,7 +36,9 @@
     "file-loader": "^1.1.11",
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "0.4.1",
-    "style-loader": "0.21.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
     "url-loader": "1.0.1",
     "webpack": "4.16.3",
     "webpack-cli": "3.1.0",
