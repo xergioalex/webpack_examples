@@ -13,7 +13,8 @@
     "build:dev:server": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
     "build:babel": "webpack --config ./babel-loader/webpack.config.js",
     "build:images": "webpack --config ./url-loader-images/webpack.config.js",
-    "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js"
+    "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
+    "build:video": "webpack --config ./url-loader-video/webpack.config.js"
   },
   "repository": "git@github.com:xergioalex/webpack_examples.git",
   "author": "Sergio Alexander <xergioalex@gmail.com>",
