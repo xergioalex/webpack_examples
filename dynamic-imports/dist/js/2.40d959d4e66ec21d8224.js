@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{16:function(e,o,n){"use strict";Object.defineProperty(o,"__esModule",{value:!0}),o.default=function(){alert("Alert - Hellow world")}}}]);
