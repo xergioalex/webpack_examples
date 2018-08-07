@@ -24,7 +24,7 @@
     "build:prevent": "webpack --config ./prevent-duplication/webpack.config.js",
     "build:vendor": "webpack --config ./vendor/webpack.config.js",
     "build:dll": "webpack --config ./dll/webpack.dll.config.js",
-    "build:dll:vendor": "webpack --config ./dll/webpack.config.js"
+    "build:dll:src": "webpack --config ./dll/webpack.config.js"
   },
   "repository": "git@github.com:xergioalex/webpack_examples.git",
   "author": "Sergio Alexander <xergioalex@gmail.com>",
